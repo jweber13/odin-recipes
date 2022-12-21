@@ -1,0 +1,29 @@
+header {
+    text-align: center;
+    margin-top: 5px;
+  }
+
+body {
+    font-family: Georgia;
+    background-image: url("https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png");
+}
+
+.title_head {
+    text-align: center;
+    background-color: bisque;
+    background-image: url(./images/japan_simple.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+#odin_title {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+    position: relative;
+    top: 30px;
+}
+
+.recipe_list {
+    max-width: 400px;
+    margin: 0 auto;
+}
