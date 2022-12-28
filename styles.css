@@ -1,29 +1,123 @@
 header {
     text-align: center;
     margin-top: 5px;
-  }
+}
+
+li {
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
 body {
     font-family: Georgia;
     background-image: url("https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png");
 }
 
+.subtitle span {
+    color: var(--clr-neutral-500);
+    display: block
+}
+
 .title_head {
     text-align: center;
     background-color: bisque;
-    background-image: url(./images/japan_simple.jpg);
+    /*background-image: url(./images/japan_simple.jpg);*/
     background-repeat: no-repeat;
     height: 500px;
+    object-fit: contain;
 }
 
 #odin_title {
     font-family: 'Brush Script MT', cursive;
     font-size: 50px;
+    margin: 50px;
     position: relative;
     top: 30px;
 }
 
+.recipe_head {
+    max-width: 600px;
+    margin: auto;
+}
+
+.recipe_exposition {
+    display: inline-flex;
+}
+
 .recipe_list {
-    max-width: 400px;
-    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*
+.recipe_list#recipe_table {
+    text-align: center;
+    padding: 20px;
+}
+*/
+
+/* pictures */
+
+.prv {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 120px;
+    width: 120px;
+}
+
+.bkg_img,
+.icon_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+/*reference*/
+.element {
+    /* outer values */
+    display: block;
+    display: inline;
+
+    /* inner values */
+    display: flex;
+    display: grid;
+    display: table;
+    display: flow-root;
+    display: ruby; /*changes how it behaves on the inside with asian chracters*/
+}
+
+/*buttons*/
+
+.btn {
+    display: inline-block; /*can put one next to another*/
+    align-items: center; /*text will center with image*/
+    padding: .5em 2em;
+    /*centering vertically in css - flexbox and grid*/
+    background: var(--clr-neutral-500);
+    color: var(--clr-neutral-100);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--ff-accent);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.button-icon {
+    height: 2em;
+    margin-left: 1em;
 }
