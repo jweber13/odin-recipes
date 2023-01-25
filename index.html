@@ -2,10 +2,127 @@
 <html lang='en'>
     <head>
         <meta charset='utf-8'>
-        <link href="./styles.css" type="text/css" rel="stylesheet">
-        <title>Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">        
+        <link href="resources/css/styles.css" type="text/css" rel="stylesheet">
+        <title>Odin Recipes</title>
+        <link rel="icon" type="image/x-icon" href="resources/images/viking_logo.ico">
     </head>
     <body>
+        <!-- Header -->
+        <header>
+            <div class="desktop">
+                <div class="logo">
+                    <img src="resources/images/viking_chef.png"><span id="odin">ODIN</span><span id="recipes">RECIPES</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="sign-in"><span>Sign In</span></button>
+                <button id="sign-up"><span>Sign Up</span></button>
+            </div>
+            <div class="mobile">
+                <ul>
+                    <li><img src=""></li>
+                    <li><img src=""></li>
+                    <li><img src=""></li>
+                    <li><img src=""></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="main-content">
+
+            <!-- Intro Section -->
+            <div id="intro-section" class="banner">
+                <div class="content center">
+                    <h2>Delicious Japanese Recipes</h2>
+                    <h4>Tried, Tested, Proven. The Best Eats from the Land of The Rising Sun.</h4>
+                </div>
+            </div>
+
+            <!-- Yama Foods -->
+
+            <div id="yama-section">
+                <div class="content">
+                    <div class="media-container"><img src="resources/images/japan_village.png"></div>
+                    <h3>Discover the distinctive local & traditional foods of the Japanese Countryside</h3>
+                    <p>If you want to discover a more intimate side of Japanese cuisine, you can head to the mountainous countryside where the food culture is tied to the land and its seasons</p>
+                </div>
+                <div class="subcontent">
+                    <div class="content-image-box">
+                        <div class="media-container"><img class="desktop" src="resources/images/pickled_mushrooms_link.png"></div>
+                        <div class="textbox">
+                            <h4>Pickled Mushrooms</h4>
+                            <p>Fast to make, best with Shiitake</p>
+                        </div>
+                    </div>
+                    <div class="content-image-box">
+                        <div class="media-container"><img class="desktop" src="/resources/images/nikujaga_link.png"></div>
+                        <div class="textbox">
+                            <h4>Nikujaga</h4>
+                            <p>Literally, "Meat and Potatoes"</p>
+                        </div>
+                    </div>
+                    <a href="#">
+                    <div class="content-image-box">
+                        <div class="media-container"><img class="desktop" src="/resources/images/sansai_soba_link.png"></div>
+                        <div class="textbox">
+                            <h4>Sansai Soba</h4>
+                            <p>Spring veggies, bamboo shoots, and mushrooms</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kansai Foods -->
+            <div id="kansai-section">
+                <div class="subcontent">
+                    <div class="content-image-box">
+                        <div class="media-container"><img class="desktop" src="/resources/images/oden_link.png"></div>
+                        <div class="textbox">
+                            <h4>Oden</h4>
+                            <p>Making a lot in a large pot is the secret</p>
+                        </div>
+                    </div>
+                    <div class="content-image-box">
+                        <div class="media-container"><img class="desktop" src="/resources/images/okonomi_link.png"></div>
+                        <div class="textbox">
+                            <h4>Okonomiyaki</h4>
+                            <p>Authentic and easy to make</p>
+                        </div>
+                    </div>
+                    <div class="content-image-box">
+                        <div class="media-container"><img class="desktop" src="/resources/images/takoyaki_link.png"></div>
+                        <div class="textbox">
+                            <h4>Takoyaki</h4>
+                            <p>The best Japanese street food</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="media-container"><img src="/resources/images/kansai_osaka.png"></div>
+                    <h3>Explore the unique culinary differences of the Kansai Region </h3>
+                    <p>Characterized by a more sweet and mild flavor, you'll find a wide variety of seafood and vegetables</p>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                <span class="copyright">Ⓒ "copyright" 2023 jweber13.</span>
+            </footer>
+        </div>
+
+        <!--
         <div class="index_body">
             <div class="title_head">
                 <h1 id="odin_title">Odin Recipes</h1>
@@ -26,7 +143,7 @@
                         <li><a><img class="prv" src="./images/soba_link_icon.jpeg" alt="Sansai Soba"></a></li>
                     </ul>
                 </div>
-            <!--
+            
                 <table id="recipe_table">
                     <tbody>
                         <tr>

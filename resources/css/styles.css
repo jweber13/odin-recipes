@@ -1,0 +1,280 @@
+/* Universal */
+
+html {
+    font-size: 24px;
+    color: #0A1726;
+    background-color: #572727;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main-content {
+    position: relative;
+    top: 3.2rem; /* To offset for fixed header. */
+}
+
+.center {
+    text-align: center;
+}
+
+.media-container {
+    overflow: hidden;
+}
+.media-container img,
+.media-container video {
+  display: block;
+  border: solid 1px #0A1726;
+  box-shadow: 5px 5px #0A1726;
+  width: 100%;
+}
+
+/* Header */
+header {
+    padding: 0 1.5rem;
+    background-color: #E5E5E5;
+    font-family: 'Cormorant Garamond', serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header .desktop {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    margin-right: .5rem;
+    height: 2rem;
+}
+
+header span {
+    font-size: 1rem;
+}
+
+#odin {
+    font-weight: bold;
+}
+
+#recipes {
+    color: #572727;
+}
+
+header nav {
+    flex-grow: 1;
+    font-size: 1rem;
+}
+
+header li {
+    display: inline;
+    padding-right: 3rem;
+    transition: all 200ms linear;
+}
+
+header li:hover {
+    text-shadow: 1px 1px 2px #572727;
+}
+
+header #sign-in,
+header #sign-up {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}
+
+header #sign-in {
+    background-color: #E5E5E5;
+    border: none;
+    margin: 0 1rem;
+    transition: all 200ms linear;
+}
+
+header #sign-in:hover {
+    text-shadow: 1px 1px 2px #572727;
+}
+
+header #sign-up {
+    background-color: #572727;
+    color: #E5E5E5;
+    border-radius: 5px;
+}
+
+header .mobile {
+    display: none;
+}
+
+/* Banner - Intro Section */
+
+#intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    background-image: url(../images/mt_fuji_cherry.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#intro-section .content {
+    width: 100%;
+    background-color: #572727;
+    color: #E5E5E5;
+}
+
+/* Yama Section */
+
+#yama-section {
+    margin: 1rem 0;
+    display: flex;
+    background-color: #E5E5E5;
+    padding: 0 1.5rem;
+}
+
+#yama-section .content {
+    width: 60%;
+    padding: 2rem 1.5rem 2rem 0;
+    border-right: solid 1rem #572727;
+}
+
+#yama-section .content h3 {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#yama-section .subcontent {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem 0;
+    justify-content: space-between;
+}
+
+#yama-section .subcontent .content-image-box:first-child {
+    padding-top: 0;
+}
+
+#yama-section .subcontent .content-image-box:last-child {
+    padding-bottom: 0;
+}
+
+#yama-section .subcontent .content-image-box {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 1rem 1rem;
+    transition: all 200ms ease 0;
+    border-bottom: solid 1px #572727;
+}
+
+#yama-section .subcontent .content-image-box:hover {
+    background-color: #572727;
+    color: #E5E5E5;
+}
+
+#yama-section .subcontent .media-container {
+    width: 35%;
+}
+
+#yama-section .subcontent h4 {
+    font-size: 1.5rem;
+}
+
+#yama-section .textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding-left: 1rem;
+}
+
+#yama-section .mobile {
+    display: none;
+}
+
+/* Kansai Section */
+
+#kansai-section {
+    margin: 1rem 0;
+    display: flex;
+    background-color: #E5E5E5;
+}
+
+#kansai-section .content h3 {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#kansai-section .content {
+    width: 60%;
+    text-align: center;
+    padding: 2rem 0 2rem 1.5rem;
+    border-left: solid 1rem #572727;
+}
+
+#kansai-section .subcontent {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem 0;
+    justify-content: space-between;
+}
+
+#kansai-section .subcontent .content-image-box {
+    display: flex;
+    padding: 1rem 1rem 1rem 0;
+    transition: all 200ms ease 0;
+    border-bottom: solid 1px #572727;
+}
+
+
+#kansai-section .subcontent .content-image-box:hover {
+    background-color: #572727;
+    color: #E5E5E5;
+}
+
+#kansai-section .subcontent .media-container {
+    width: 35%;
+}
+
+#kansai-section .subcontent h4 {
+    font-size: 1.5rem;
+}
+
+#kansai-section .textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding-right: 1rem;
+    text-align: right;
+}
+
+#kansai-section .mobile {
+    display: none;
+}
+
+/* Footer */
+footer {
+    padding: .5rem;
+    font-size: .75rem;
+    background-color: #E5E5E5;
+    color: #0A1726;
+    font-family: Arial, Helvetica, sans-serif;
+}
